@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #d50000; /* Red color on hover */
+}
+
+section {
+    padding: 100px 20px;
+    margin-top: 60px; /* to offset the fixed navbar */
+    border-radius: 8px;
+}
+
+.home-section {
+    background-image: url('images/kids.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.home-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    font-size: 1.2em;
+}
+
+.cta-button {
+    background-color: #d50000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff6666;
+}
+
+.about-section {
+    /* background-image: url('images/yca\ w.jpg'); */
+    background-color: #ff6666;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 20px;
+}
+
+.articles-section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.post-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    max-width: 900px; /* Set a maximum width */
+    margin-left: auto; /* Center the card */
+    margin-right: auto; /* Center the card */
+}
+
+.post-card:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.post-actions {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.like-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 10px; /* Add space between like button and count */
+}
+
+.comments-section {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.comment-input {
+    flex: 1; /* Allow input to take up available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px; /* Add some space to the right */
+}
+
+.comment-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #d50000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.comment-button:hover {
+    background-color: #ff6666;
+}
+
+.comments-display {
+    margin-top: 10px;
+    max-height: 150px; /* Limit height for scrolling */
+    overflow-y: auto; /* Enable scrolling if comments exceed height */
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .post-card {
+        margin: 10px; /* Adjust margins on smaller screens */
+        padding: 10px; /* Adjust padding on smaller screens */
+    }
+    
+    .post-header h2 {
+        font-size: 1.5em; /* Adjust heading size */
+    }
+
+    .like-button {
+        font-size: 16px; /* Adjust font size for buttons */
+    }
+    
+    .comment-input {
+        padding: 8px; /* Adjust input padding */
+    }
+
+    .comment-button {
+        padding: 8px 10px; /* Adjust button padding */
+    }
+}
+
+
+
+.tournament-section {
+    /* background-image: url('images/venue.jpg'); */
+    background-color: #ff6666;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 20px;
+}
+
+.gallery-section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.gallery-section img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.sponsors-section {
+    background-color: #f2f2f2; /* Light background color */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.sponsors-section h2 {
+    color: #d50000; /* Red color for headings */
+    margin-bottom: 20px;
+}
+
+.sponsors-section p {
+    margin-bottom: 30px;
+}
+
+.sponsor-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.sponsor-logos img {
+    max-width: 150px; /* Limit logo size */
+    margin: 10px;
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+
+.contact-section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section input, .contact-section textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    background-color: #d50000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-section button:hover {
+    background-color: #ff6666;
+}
+
+h1, h2 {
+    color: #d50000; /* Red color for headings */
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: #d50000;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

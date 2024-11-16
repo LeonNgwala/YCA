@@ -1,0 +1,160 @@
+.about-section {
+    background-image: url('Assets/yca w.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 20px;
+}
+
+.articles-section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.post-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    max-width: 400px; /* Set a maximum width */
+    margin-left: auto; /* Center the card */
+    margin-right: auto; /* Center the card */
+}
+
+.post-card:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.post-actions {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.like-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 10px; /* Add space between like button and count */
+}
+
+.comments-section {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.comment-input {
+    flex: 1; /* Allow input to take up available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px; /* Add some space to the right */
+}
+
+.comment-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #d50000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.comment-button:hover {
+    background-color: #ff6666;
+}
+
+.comments-display {
+    margin-top: 10px;
+    max-height: 150px; /* Limit height for scrolling */
+    overflow-y: auto; /* Enable scrolling if comments exceed height */
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.tournament-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.gallery-section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sponsors-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.sponsor-logos img {
+    width: 100px; /* Set width for logos */
+    margin: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .post-card {
+        margin: 10px; /* Adjust margins on smaller screens */
+        padding: 10px; /* Adjust padding on smaller screens */
+    }
+    
+    .post-header h2 {
+        font-size: 1.5em; /* Adjust heading size */
+    }
+
+    .like-button {
+        font-size: 16px; /* Adjust font size for buttons */
+    }
+    
+    .comment-input {
+        padding: 8px; /* Adjust input padding */
+    }
+
+    .comment-button {
+        padding: 8px 10px; /* Adjust button padding */
+    }
+
+    .navbar .nav-links {
+        flex-direction: column; /* Stack links on smaller screens */
+        align-items: flex-start; /* Align links to start */
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0; /* Add space between stacked links */
+    }
+
+    .home-section {
+        padding: 100px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .footer {
+        font-size: 0.8em; /* Adjust font size for the footer */
+    }
+}
